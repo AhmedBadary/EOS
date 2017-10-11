@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width">
+  	<title>Arctic</title>
+  	<script src="http://final-project-zeegeeko.c9users.io/raphael.js"></script>
+  	<script src="http://final-project-zeegeeko.c9users.io/raphael-svg-import.js"></script>
+  	<script src="http://final-project-zeegeeko.c9users.io/jquery-3.2.1.js"></script>
+  	<script src="http://final-project-zeegeeko.c9users.io/paper-full.js"></script>
+  	<style>
+  	  #back {
+  	    position: absolute;
+  	    top: 10px;
+  	    left: 10px;
+  	    z-index: 2;
+  	  }
+  	</style>
+  </head>
+  <body>
+    <div id="back">
+      <button onclick="location.href = 'http://final-project-zeegeeko.c9users.io/globe/globe_3';" type="button" id="myBtn" class="glass">Globe</button>
+    </div>
+    <div class = "pointer" style = "z-index: 2; margin: 0 auto">
+      <img src="http://final-project-zeegeeko.c9users.io/pointlights/green.png">
+    </div>
+    <div style="position: relative;">
+      <canvas id="myCanvas" width="640" height="1136" 
+        style="position: absolute; left: 0; top: 0; z-index: 0;"></canvas>
+      <canvas id="fogCanvas" width="640" height="1136" 
+        style="position: absolute; left: 0; top: 0; z-index: 1;"></canvas>
+      <img id="fogImg" src="http://final-project-zeegeeko.c9users.io/land_fog.png" width="1130" height="1050" 
+        style="position: absolute; left: 0; top: 0; z-index: 1; display: none;">
+    </div>
+  </body>
+</html>

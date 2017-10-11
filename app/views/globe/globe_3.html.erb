@@ -1,0 +1,75 @@
+<!-- Three.JS Earth WITH mouse Controls -->
+<!DOCTYPE HTML>
+<html>
+  <head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebGL Earth</title>
+    <style>
+        body { margin: 0; overflow: hidden; background-color: #000; }
+        .tm  { position: absolute; top: 10px; right: 10px; }
+        .webgl-error { font: 15px/30px monospace; text-align: center; color: #fff; margin: 50px; }
+        .webgl-error a { color: #fff; }
+      </style>
+  </head>
+  <body>
+      <ul class="menu">
+        <li onclick="rMenuSelect(this.id)" id="red"><!--Red--><div class="slice" id="red"/></li>
+        <li onclick="rMenuSelect(this.id)" id="yellow"><!--Yellow--><div class="slice" id="yellow"/></li>
+        <li onclick="rMenuSelect(this.id)" id="orange"><!--Orange--><div class="slice" id="orange"/></li>
+        <li onclick="rMenuSelect(this.id)" id="blue"><!--Blue--><div class="slice" id="blue"/></li>
+        <li onclick="rMenuSelect(this.id)" id="purple"><!--Purple--><div class="slice" id="purple"/></li>
+        <li onclick="rMenuSelect(this.id)" id="green"><!--Green--><div class="slice" id="green"/></li>
+      </ul>
+      <a href="" class="myButton" id="but"></a> 
+    <form id="form">
+          <!--action="/action_page.php">-->
+          <!--<label for="fname">Name</label>-->
+      <input type="text" id="fname" name="firstname" placeholder="Name..">
+  
+          <!--<select id="Terrain" name="land">-->
+          <!--  <option value="Grass">Happy</option>-->
+          <!--  <option value="Dessert">Sad</option>-->
+          <!--  <option value="something">Jealous</option>-->
+          <!--  <option value="Grass">Bored</option>-->
+          <!--  <option value="something">Interested</option>-->
+          <!--</select>-->
+
+          <!--<select id="Where" name="Where">-->
+          <!--  <option value="aa">Islands</option>-->
+          <!--  <option value="asia">Bird</option>-->
+          <!--  <option value="africa">Blob</option>-->
+          <!--  <option value="australia">Midguard</option>-->
+          <!--  <option value="europe">Moon</option>-->
+          <!--</select>-->
+        
+          <input type="submit" value="Submit">
+      </form>
+
+    <div id="webgl"></div>
+    <div id="worldmap"></div>
+    <a href="http://ahmedbadary.ml/" class="tm">
+        <img src="http://ahmedbadary.ml/main_files/logo.png">
+    </a>
+
+
+
+    <!--<script src="http://final-project-zeegeeko.c9users.io/three.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r78/three.js"></script>
+    <script src="http://final-project-zeegeeko.c9users.io/Detector.js"></script>        
+    <script src="http://final-project-zeegeeko.c9users.io/TrackballControls.js"></script>
+    <script src="http://final-project-zeegeeko.c9users.io/earth.js"></script>
+
+    // <script>
+    // // tell the embed parent frame the height of the content
+    // if (window.parent && window.parent.parent) {
+    //     window.parent.parent.postMessage(["resultsFrame", {
+    //         height: document.body.getBoundingClientRect().height,
+    //         slug: "3Lg911vs"
+    //     }], "*")
+    // }
+    // </script>
+  </body>
+</html>
